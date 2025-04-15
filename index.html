@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,12 +28,12 @@
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     }
 
-    .profilbild {
+    .profile-img {
       text-align: center;
       margin-bottom: 25px;
     }
 
-    .profilbild img {
+    .profile-img img {
       width: 180px;
       border-radius: 12px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
@@ -60,16 +60,19 @@
       line-height: 1.6;
     }
 
-    .abschnitt {
+    .section {
       margin-bottom: 25px;
     }
 
-    .download {
+    .downloads {
       text-align: center;
       margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
     }
 
-    .download a {
+    .downloads a {
       background-color: #003366;
       color: #fff;
       padding: 10px 20px;
@@ -78,9 +81,11 @@
       font-weight: 600;
       font-size: 0.95rem;
       display: inline-block;
+      width: fit-content;
+      margin: 0 auto;
     }
 
-    .download a:hover {
+    .downloads a:hover {
       background-color: #005599;
     }
 
@@ -93,13 +98,13 @@
         font-size: 2rem;
       }
 
-      .profilbild img {
+      .profile-img img {
         width: 140px;
       }
 
-      .download a {
-        padding: 10px 16px;
+      .downloads a {
         font-size: 0.9rem;
+        padding: 10px 16px;
       }
     }
   </style>
@@ -108,60 +113,62 @@
 
   <div class="container">
 
-    <div class="profilbild">
-      <img src="BelminKaric.jpg" alt="Profilbild von Belmin Karic">
+    <div class="profile-img">
+      <img src="BelminKaric.jpg" alt="Profile picture of Belmin Karic">
     </div>
 
     <h1>Belmin Karic</h1>
 
-    <div class="abschnitt">
-      <h2>Kontakt</h2>
-      <p><strong>Geburtsdatum:</strong> 19.05.2006</p>
-      <p><strong>Wohnort:</strong> Bad Wimpfen, Deutschland</p>
-      <p><strong>E-Mail:</strong> belminkaric20@gmail.com</p>
+    <div class="section">
+      <h2>Contact</h2>
+      <p><strong>Date of Birth:</strong> 21.11.2005</p>
+      <p><strong>Location:</strong> Bad Wimpfen, Germany</p>
+      <p><strong>Phone:</strong> +49 176 57904212</p>
+      <p><strong>Email:</strong> belminkaric06@gmail.com</p>
     </div>
 
-    <div class="abschnitt">
-      <h2>Berufserfahrung</h2>
+    <div class="section">
+      <h2>Work Experience</h2>
 
-      <p><strong>Aushilfe im Verkauf – Netto Marken-Discount (seit 10.2024)</strong></p>
-      <p>Tätigkeiten im Einzelhandel: Kassieren, Kundenservice, Lagerarbeit, Warenverräumung, Ladenpflege.</p>
-      <p>Ich bekam zu Beginn eine Kassenschulung und wurde in alle Aufgaben gründlich eingearbeitet – das half mir, mich sicher zu fühlen und schnell Verantwortung zu übernehmen.</p>
+      <p><strong>Sales Assistant – Netto Marken-Discount (since 10.2024)</strong></p>
+      <p>Tasks: Cash register, customer service, stocking shelves, warehouse assistance, maintaining store cleanliness.</p>
+      <p>I received proper training before working independently at the register. I was guided through all duties and welcomed into a helpful team environment.</p>
 
-      <p><strong>Kassierer & Verkäufer – NORMA, Bad Rappenau (08.2024 – 10.2024)</strong></p>
-      <p>Motivation: Einblick hinter die Kulissen eines Einzelhandelsbetriebs.  
-         Aufgaben: Kasse, Kundenberatung, Waren einräumen, Sauberkeit im Laden.</p>
-      <p>Ich kam in ein komplett neues Umfeld, in dem vieles durch eigenes Lernen entstand. Anfangs arbeitete ich mit analogen Kassen, später mit digitalen. Es war, als würde ich direkt ins kalte Wasser springen – und genau das hat mich weitergebracht.</p>
+      <p><strong>Cashier & Salesperson – NORMA, Bad Rappenau (08.2024 – 10.2024)</strong></p>
+      <p>Motivation: To gain insight into retail operations.  
+         Tasks: Operating the cash register, customer support, shelf stocking, maintaining store order.</p>
+      <p>Everything was new when I started. I first worked with analog registers, then transitioned to digital systems. The onboarding was mostly independent – I was thrown in at the deep end, but it helped me grow fast.</p>
 
-      <p><strong>Praktikum – Kindergärtner</strong></p>
-      <p>Aufgaben: Betreuung von Kindern, Mitwirkung bei Spielen & Lernaktivitäten, pädagogische Begleitung im Alltag.</p>
-      <p>Ich durfte frei mitarbeiten, eigene Ideen einbringen und war neugierig auf alles. Eine Erzieherin erzählte mir viel über die Geschichte des Kindergartens, die Konzepte und ihren beruflichen Werdegang – das hat mir besonders gefallen.</p>
+      <p><strong>Internship – Kindergarten Assistant</strong></p>
+      <p>Tasks: Supporting children in daily activities, assisting in learning games, and helping the team in everyday routines.</p>
+      <p>I could work independently and ask the educators questions about their careers. One educator shared deep insights about the kindergarten’s history and educational philosophy – that was particularly inspiring.</p>
     </div>
 
-    <div class="abschnitt">
-      <h2>Schulbildung</h2>
-      <p><strong>Hohenstaufengymnasium, Bad Wimpfen (2016–2025)</strong></p>
-      <p><strong>Ludwig-Frohnhäuser-Schule, Bad Wimpfen (2012–2016)</strong></p>
+    <div class="section">
+      <h2>Education</h2>
+      <p><strong>Hohenstaufen Gymnasium, Bad Wimpfen (2016–2025)</strong></p>
+      <p><strong>Ludwig-Frohnhäuser School, Bad Wimpfen (2012–2016)</strong></p>
     </div>
 
-    <div class="abschnitt">
-      <h2>Interessen</h2>
-      <p>Ich bin sportlich aktiv – spazieren, laufen, Fahrrad fahren und Fitnessstudio. Ich interessiere mich dafür, wie der Körper funktioniert und wo seine Grenzen liegen.</p>
-      <p>Ich spiele gerne Videospiele, weil ich das Eintauchen in fremde Welten und das Game Design faszinierend finde – besonders, wie Spieler Entscheidungen treffen.</p>
-      <p>Ich habe auch ein großes Interesse an Wirtschaft, weil sie in der ganzen Welt stattfindet und unser Leben stark beeinflusst. Gerade in Zeiten steigender Preise wird klar, wie wichtig wirtschaftliches Verständnis ist.</p>
-      <p>Durch meine zweisprachige Kindheit (Bosnisch & Deutsch) habe ich ein starkes Interesse an Sprachen entwickelt. Ich finde, dass Sprachen neue Denkweisen eröffnen und einen echten Einblick in andere Kulturen ermöglichen.</p>
+    <div class="section">
+      <h2>Interests</h2>
+      <p>I enjoy being physically active – walking, running, cycling and working out at the gym. I’m fascinated by what the human body can do and how far we can push and improve it.</p>
+      <p>I’m also passionate about video games, especially game design and narrative decisions within virtual worlds.</p>
+      <p>I have a growing interest in economics. It’s a global system that impacts everyone. Especially nowadays, as goods and services become more expensive, I find it important to understand the economic forces behind it.</p>
+      <p>Because I grew up bilingual (Bosnian & German), I developed a passion for languages. Learning new languages lets me understand other cultures and see the world from different perspectives.</p>
     </div>
 
-    <div class="abschnitt">
-      <h2>Sprachen</h2>
-      <p><strong>Bosnisch:</strong> Muttersprache</p>
-      <p><strong>Deutsch:</strong> Fließend</p>
-      <p><strong>Englisch:</strong> Sehr gut</p>
-      <p><strong>Französisch:</strong> Gut</p>
+    <div class="section">
+      <h2>Languages</h2>
+      <p><strong>Bosnian:</strong> Native</p>
+      <p><strong>German:</strong> Fluent</p>
+      <p><strong>English:</strong> Very good</p>
+      <p><strong>French:</strong> Good</p>
     </div>
 
-    <div class="download">
-      <a href="lebenslauf-belmin-karic.pdf" download>PDF-Lebenslauf herunterladen</a>
+    <div class="downloads">
+      <a href="french-certificate.pdf" download>Download French Certificate</a>
+      <a href="work-reference.pdf" download>Download Work Reference</a>
     </div>
 
   </div>
